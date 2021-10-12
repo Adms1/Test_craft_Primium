@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyHeader" id="KGk-i7-Jjw" customClass="MyHeader" customModule="TestCraftLite" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Fz-Pa-Rcg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcU-zM-7OC">
+                                <rect key="frame" x="20" y="10.5" width="290" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IcU-zM-7OC" firstAttribute="leading" secondItem="3Fz-Pa-Rcg" secondAttribute="leading" constant="20" id="2Mb-QC-nYm"/>
+                            <constraint firstAttribute="height" constant="40" id="Cml-Pu-Kah"/>
+                            <constraint firstItem="IcU-zM-7OC" firstAttribute="centerY" secondItem="3Fz-Pa-Rcg" secondAttribute="centerY" id="P1P-4k-lUR"/>
+                            <constraint firstAttribute="trailing" secondItem="IcU-zM-7OC" secondAttribute="trailing" constant="10" id="XAP-Wo-qBf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Fz-Pa-Rcg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3Sq-Iu-ciS"/>
+                    <constraint firstItem="3Fz-Pa-Rcg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ut2-am-J5P"/>
+                    <constraint firstAttribute="bottom" secondItem="3Fz-Pa-Rcg" secondAttribute="bottom" id="d1u-7n-BH5"/>
+                    <constraint firstAttribute="trailing" secondItem="3Fz-Pa-Rcg" secondAttribute="trailing" id="f2I-Wd-j6Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblHeader" destination="IcU-zM-7OC" id="TGn-1h-NUp"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="66"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

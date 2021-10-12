@@ -1,0 +1,6 @@
+framework module Pods_TestCraftLite_TestCraftLiteUITests {
+  umbrella header "Pods-TestCraftLite-TestCraftLiteUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
